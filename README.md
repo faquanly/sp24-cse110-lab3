@@ -2,3 +2,4 @@
 
 [publish page](https://faquanly.github.io/sp24-cse110-lab3/)
 branhc1 - edit
+branhc2 - edit
