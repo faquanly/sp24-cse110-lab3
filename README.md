@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3 - CSS and Agile Intro
 
-[publish page](https://faquanly.github.io/CSE110_Lab2_Starter/)
+[publish page](https://faquanly.github.io/sp24-cse110-lab3/)
