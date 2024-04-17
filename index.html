@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<style>
+    li {
+        color: red;
+        /* Apply red color to lists */
+    }
+</style>
+<style>
+    p {
+        color: #0E3881;
+        /* Apply hex codes to paragraph */
+    }
+</style>
+<style>
+    body {
+      background-color: lightyellow; /*change color background to light yellow*/
+    }
+</style>
+<style> /*units of measurement for sizing and spacing elements*/
+h1 {font-size: 2pc;}
+h2 {font-size: 8mm;}
+h3 {font-size: 6mm;}
+  
+  p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  li {
+    font-size: 16px;
+    line-height: 2em;
+  }
+  span{font-size: 1em;}
+  </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Minutes - Team 7</title>
+
 </head>
 
 <body>
@@ -25,8 +57,9 @@
     </header>
 
     <main>
-        <h1> CSE110-SOFTWARE ENGINEERING</h1>
-        <h2> TEAM 7 ACTIVITIES</h2>
+        <h1 style="background-color:hsl(147, 50%, 47%);"> CSE110 - SOFTWARE ENGINEERING</h1>
+
+        <h2 style="color:rgb(20, 164, 119);"> TEAM 7 ACTIVITIES</h2>
         <h5><u>Date: April 11, 2024</u></h5>
         <img src="https://cse.ucsd.edu/sites/default/files/alumni/2019%20SD%20Area%20CSE%20Alumni%20Reunion.jpg"
             alt="teampic" width="350">
@@ -43,6 +76,7 @@
 
         <h3 id="aboutus">About us</h3>
         <hr>
+
         <p>
             We are students from various departments at UCSD, including <b>Computer Science, Computer Engineering,
                 Mathematics and Computer Science</b> majors.
@@ -82,6 +116,7 @@
             <p>
                 All assigments of projects shoulb be made over GitHub.
             </p>
+
             <p>
                 All members should check the latest version before working on the project.
             </p>
@@ -143,14 +178,14 @@
             </select>
             <br> <br>
             <label for="favorite-color">Choose your favorite color:</label>
-        <input list="colorList" id="favorite-color" name="favoriteColor">
-        <datalist id="colorList">
-            <option value="Black"></option>
-            <option value="White"></option>
-            <option value="Red"></option>
-            <option value="Pink"></option>
-            <option value="Yellow"></option>
-        </datalist>
+            <input list="colorList" id="favorite-color" name="favoriteColor">
+            <datalist id="colorList">
+                <option value="Black"></option>
+                <option value="White"></option>
+                <option value="Red"></option>
+                <option value="Pink"></option>
+                <option value="Yellow"></option>
+            </datalist>
 
         </form>
         <p>Do you have any question?</p>
