@@ -1,111 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    li {
-        color: red;
-        /* Apply red color to lists */
-    }
-</style>
-<style>
-    p {
-        color: #0E3881;
-        /* Apply hex codes to paragraph */
-    }
-</style>
-<style>
-    body {
-        background-color: lightyellow;
-        /*change color background to light yellow*/
-    }
-</style>
-
-<style>
-    /*units of measurement for sizing and spacing elements*/
-    h1 {
-        font-size: 2pc;
-    }
-
-    h2 {
-        font-size: 8mm;
-    }
-
-    h3 {
-        font-size: 6mm;
-    }
-
-    p {
-        font-size: 16px;
-        line-height: 20px;
-    }
-
-    li {
-        font-size: 16px;
-        line-height: 2em;
-    }
-
-    span {
-        font-size: 1em;
-    }
-</style>
-
-
-<style>
-    div {
-        background-color: lightyellow;
-        width: 300px;
-        border: 2px solid darkolivegreen;
-        padding: 5px 10px 10px 20px;
-        /*spacing within within elements*/
-        margin: 15px 20px 10px 20px;
-    }
-</style>
-<style>
-    .center {
-        margin: auto;
-        width: 50%;
-        border: 3px solid #73AD21;
-        padding: 10px;
-    }
-</style>
-<style>
-    /* unvisited link */
-    a:link {
-        color: rgb(51, 37, 196);
-    }
-
-    /* visited link */
-    a:visited {
-        color: rgb(81, 95, 81);
-    }
-
-    /* mouse over link */
-    a:hover {
-        color: hotpink;
-    }
-
-    /* selected link */
-    a:active {
-        color: blue;
-    }
-</style>
-<style>
-    div.static {
-        position: static;
-        border: 3px solid #73AD21;
-    }
-</style>
-<style>
-    p.relative {
-        position: relative;
-        left: 30px;
-        border: 3px solid #73AD21;
-    }
-</style>
 
 <head>
     <style>
+        .flex-container {
+            display: flex;
+            background-color: lightpink;
+        }
+
+        .flex-container>div {
+            background-color: #73AD21;
+            flex-direction: column;
+            margin: 5px;
+            padding: 20px;
+            font-size: 15px;
+        }
+    </style>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: #2196F3;
+            padding: 50px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+
+    <style>
+        li {
+            color: red;
+            /* Apply red color to lists */
+        }
+    </style>
+    <style>
         p {
-            color: rgb(56, 192, 99);
+            color: #0E3881;
+            /* Apply hex codes to paragraph */
+        }
+    </style>
+    <style>
+        body {
+            background-color: lightyellow;
+            /*change color background to light yellow*/
+        }
+    </style>
+    <style>
+        * {
+            background-color: lightyellow;
+        }
+    </style>
+
+    <style>
+        /*units of measurement for sizing and spacing elements*/
+        h1 {
+            font-size: 2pc;
+        }
+
+        h2 {
+            font-size: 8mm;
+        }
+
+        h3 {
+            font-size: 6mm;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        li {
+            font-size: 16px;
+            line-height: 2em;
+        }
+
+        span {
+            font-size: 1em;
+        }
+    </style>
+
+
+    <style>
+        div {
+            background-color: lightyellow;
+            width: 300px;
+            border: 2px solid darkolivegreen;
+            padding: 5px 10px 10px 20px;
+            /*spacing within within elements*/
+            margin: 15px 20px 10px 20px;
+        }
+    </style>
+    <style>
+        .center {
+            margin: auto;
+            width: 50%;
+            border: 3px solid #73AD21;
+            padding: 10px;
+        }
+    </style>
+    <style>
+        /* unvisited link */
+        a:link {
+            color: rgb(51, 37, 196);
+        }
+
+        /* visited link */
+        a:visited {
+            color: rgb(81, 95, 81);
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: hotpink;
+        }
+
+        /* selected link */
+        a:active {
+            color: blue;
+        }
+
+        p.relative {
+            position: relative;
+            left: 30px;
+            border: 3px solid #73AD21;
+        }
+    </style>
+
+    <style>
+        li.one {
+            display: inline;
+        }
+
+        p {
+            color: rgb(192, 56, 149);
         }
 
         p.ex1 {
@@ -125,6 +159,110 @@
         }
     </style>
 
+    <style>
+        h1 {
+            color: blue;
+            background-color: yellow;
+        }
+    </style>
+
+    <style>
+        p.one {
+            position: static;
+            border: 3px solid #73AD21;
+            border-style: dotted;
+            border-color: green;
+            border-width: 5px;
+            border-radius: 50px;
+            display: inline-block;
+            color: rgb(86, 28, 201);
+        }
+
+        p.two {
+            position: relative;
+            left: 30px;
+            border: 3px solid #73AD21;
+            border-style: dashed;
+            border-color: red;
+            border-width: 3px;
+            border-radius: 30px;
+            display: inline;
+            color: rgb(201, 89, 28);
+        }
+
+        p.three {
+            border-style: fixed;
+            border-color: rgb(255, 0, 149);
+            border-width: double;
+            border-radius: 30px;
+            display: block;
+            color: rgb(11, 125, 91);
+        }
+
+        p.four {
+            position: absolute;
+            top: 30px;
+            left: 40px;
+            border-style: solid;
+            border-color: rgb(0, 255, 195);
+            border-width: double;
+            border-radius: 30px;
+            display: none;
+            color: rgb(97, 97, 10);
+        }
+
+        p.five {
+            position: sticky;
+            border-style: double;
+            border-color: rgb(94, 255, 0);
+            border-width: 20px;
+            border-radius: 30px;
+            display: inline;
+            color: rgb(97, 97, 10);
+        }
+
+        div.one {
+            border-style: double;
+            border-color: green;
+            border-width: 5px;
+        }
+
+        .center {
+            margin: auto;
+            width: 50%;
+            border: 3px solid green;
+            padding: 10px;
+        }
+    </style>
+
+    <style>
+        .p1 {
+            font-family: "Lucida Console", "Courier New", monospace;
+        }
+    </style>
+    <style>
+        .p2 {
+            font-family: "Lucida Handwriting", "Copperplate", fantasy;
+        }
+
+        .intro {
+            background-color: lightblue;
+        }
+
+        div p {
+            background-color: #21f3d0;
+        }
+        div+p {
+            background-color: rgb(21, 223, 54);
+        }
+        div~p {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        div:has(p) {
+            background: red;
+        }
+    </style>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Minutes</title>
@@ -133,59 +271,74 @@
 
 <body>
     <header>
+        <h3>Meeting Minutes</h3>
+        <div class="flex-container">
+            <div>Team members</div>
+            <div>Team contract</div>
+            <div>Team Video</div>
 
-        <div>Meeting Minutes - First Brainstorming</div>
+        </div>
         <nav>
             <ul>
-                <li><a href="#home"><i>Home</i></a></li>
-                <li><a href="#aboutus"><i>About us</i></a></li>
-                <li><a href="#brainstorming"><i>Brainstorming</i></a></li>
-                <li><a href="#teamcontract"><i>Team Contract</i></a></li>
-                <li><a href="#otherrule"><i>Other Rule</i></a></li>
-                <li><a href="#teamaudio"><i>Team Audio</i></a></li>
-                <li><a href="#teamvideo"><i>Team Video</i></a></li>
+                <li clsss="center" class="one"><a href="#home"><i>Home</i></a></li>
+                <li clsss="center" class="one"><a href="#aboutus"><i>About us</i></a></li>
+                <li clsss="center" class="one"><a href="#brainstorming"><i>Brainstorming</i></a></li>
+                <li clsss="center" class="one"><a href="#teamcontract"><i>Team Contract</i></a></li>
+                <li clsss="center" class="one"><a href="#conflict-resolution"><i>Conflict Resolution</i></a></li>
+                <li clsss="center" class="one"><a href="#otherrules"><i>Other Rule</i></a></li>
+                <li clsss="center" class="one"><a href="#teamaudio"><i>Team Audio</i></a></li>
+                <li clsss="center" class="one"><a href="#teamvideo"><i>Team Video</i></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1 style="background-color:hsl(147, 50%, 47%);"> CSE110 - SOFTWARE ENGINEERING</h1>
+        <h1 style="background-color:hsl(147, 50%, 47%);" class="p1"> CSE110 - SOFTWARE ENGINEERING</h1>
 
         <h2 style="color:rgb(20, 164, 119);"> TEAM 7 ACTIVITIES</h2>
         <h5><u>Date: April 11, 2024</u></h5>
         <img src="https://cse.ucsd.edu/sites/default/files/alumni/2019%20SD%20Area%20CSE%20Alumni%20Reunion.jpg"
             alt="teampic" width="350">
-        <h3 id="attendance" style="color:rgb(211, 152, 56);">Attendance</h3>
+        <h3 id="attendance" style="color:rgb(211, 152, 56);" class="intro">Attendance</h3>
 
         <ol>
-            <li><input type="checkbox"> Emma Nguyen</li>
-            <li><input type="checkbox"> Angela B</li>
-            <li><input type="checkbox"> Jessica N</li>
-            <li><input type="checkbox"> Ann H</li>
+            <li class="intro"><input type="checkbox"> Emma Nguyen</li>
+            <li class="intro"><input type="checkbox"> Angela B</li>
+            <li class="intro"><input type="checkbox"> Jessica N</li>
+            <li class="intro"><input type="checkbox"> Ann H</li>
         </ol>
+        <h1>Stand-up Notes week 1</h1>
+
+        <div class="grid-container">
+            <div class="grid-item">Day 1</div>
+            <div class="grid-item">Day 2</div>
+            <div class="grid-item">Day 3</div>
+            <div class="grid-item">Day 4</div>
+        </div>
 
         <h2 id="home"><button>Home</button></h2>
 
         <h3 id="aboutus" style="color:rgb(211, 152, 56);">About us</h3>
         <hr>
 
-        <p>
+        <p class="p2">
             We are students from various departments at UCSD, including <b>Computer Science, Computer Engineering,
                 Mathematics and Computer Science</b> majors.
         </p>
         <hr>
         <h3 id="brainstorming" style="color:rgb(211, 152, 56);">Brainstorming</h3>
-
-        <p>
+        <p class="one">
             We briefly introduced ourself with <strong>name, major, hobbies, and favorite shape</strong>. <br>Then we
             played
             game "Two Truth,
             One Lie" to get to know each other.<br>
         </p>
-        <p>
+
+        <p class="two">
             We discussed to choose a name and policies for our team.
         </p>
-        <p>
+
+        <p class="three">
             We did some fun activities, took pictures and <span id="teamvideo"> record a video </span>.
         </p>
 
@@ -197,9 +350,10 @@
                 <span>During the <b class="keyword">development days</b>, members must frequently check into
                     slack.</span>
             </p>
-            <p>
+            <p class="five">
                 Members are expected to attend the weekly meeting.
             </p>
+            <p class="five">All assignments of projects should be made over GitHub.</p>
 
         </details>
         <br>
@@ -212,14 +366,32 @@
             <p>
                 All members should check the latest version before working on the project.
             </p>
+            <p>If members are working on an issue/development, they shall put their updates in the #checkin channel on
+                slack with the issue that they are working on, and any blockers that hinder development</p>
+            <p>During the middle of the quarter, developers and designers are expected to have a check-in with the team
+                leads to discuss progress the current state of the project.s</p>
 
         </details>
+        <h3 id="conflict-resolution" style="color:rgb(211, 152, 56);">Conflict Resolution</h3>
+        <p class="two">Any sources of conflict can be handled internally or raised to the team leads/TA - whichever
+            medium feels safest and most comfortable.</p>
+        <div>
+            <p class="three">If a member feels uncomfortable with another member, they should reach out to the team
+                leads to
+                discuss the issue.</p>
+        </div>
+        <p class="four">If the issue is not resolved, the team leads will escalate the issue to the TA.</p>
+        <p class="four">If there exists a conflict, members are expected to inform the team leads at least 48 hours in
+            advance unless it is an emergency.</p>
 
         <h3 id="otherrules" style="color:rgb(211, 152, 56);">Other Rules</h3>
         <ul>
             <li>Everyone should <em>contribute</em> meaningful work to the project.</li>
+            <div>Question?</div>
             <li>Tasks should be <em>shared equally</em> among team members.</li>
+            <div>Question?</div>
             <li>Attendence is <em>expected</em> at our scheduled weekly meeting.</li>
+            <div>Question?</div>
             <li>We can have some <em>fun</em> working on the project.</li>
             <!-- We can have some fun working on the project. -->
         </ul>
@@ -227,6 +399,14 @@
             alt="teampic" width="350">
         <section id="teamaudio">
             <h3 style="color:rgb(211, 152, 56);">Team Audio</h3>
+            <div>
+                <p>We recording an audio every meeting. </p>
+            </div>
+                <p>Typically it is best to put the recording
+                    device centrally in the room to capture contributions from everyone present and to ensure the audio
+                    quality. </p>
+            
+
             <audio controls src="sound6.Motivated.mp3"></audio>
             <p>This is a short audio.
             </p>
