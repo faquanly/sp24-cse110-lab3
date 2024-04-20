@@ -16,22 +16,7 @@
             font-size: 15px;
         }
     </style>
-    <style>
-        .grid-container {
-            display: grid;
-            grid-template-columns: auto auto auto;
-            background-color: #2196F3;
-            padding: 50px;
-        }
 
-        .grid-item {
-            background-color: rgba(255, 255, 255, 0.8);
-            border: 1px solid rgba(0, 0, 0, 0.8);
-            padding: 10px;
-            font-size: 20px;
-            text-align: center;
-        }
-    </style>
 
     <style>
         li {
@@ -85,7 +70,22 @@
             font-size: 1em;
         }
     </style>
-
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 5px;
+            background-color: #2196F3;
+            padding: 100px;
+          }
+          
+          .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid black;
+            text-align: center;
+            font-size: 20px;
+          }
+    </style>
 
     <style>
         div {
@@ -191,10 +191,9 @@
         }
 
         p.three {
-            position: fixed;
-            border-style: dotted;
+            border-style: fixed;
             border-color: rgb(255, 0, 149);
-            border-width: 3px;
+            border-width: double;
             border-radius: 30px;
             display: block;
             color: rgb(11, 125, 91);
@@ -206,7 +205,7 @@
             left: 40px;
             border-style: solid;
             border-color: rgb(0, 255, 195);
-            border-width: 3px;
+            border-width: double;
             border-radius: 30px;
             display: none;
             color: rgb(97, 97, 10);
@@ -253,12 +252,15 @@
         div p {
             background-color: #21f3d0;
         }
+
         div+p {
             background-color: rgb(21, 223, 54);
         }
+
         div~p {
             font-family: 'Courier New', Courier, monospace;
         }
+
         div:has(p) {
             background: red;
         }
@@ -309,12 +311,16 @@
             <li class="intro"><input type="checkbox"> Ann H</li>
         </ol>
         <h1>Stand-up Notes week 1</h1>
-
+        <p>We take note every weekly meeting to manage the project.</p>
         <div class="grid-container">
-            <div class="grid-item">Day 1</div>
-            <div class="grid-item">Day 2</div>
-            <div class="grid-item">Day 3</div>
-            <div class="grid-item">Day 4</div>
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>  
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>  
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
         </div>
 
         <h2 id="home"><button>Home</button></h2>
@@ -403,10 +409,10 @@
             <div>
                 <p>We recording an audio every meeting. </p>
             </div>
-                <p>Typically it is best to put the recording
-                    device centrally in the room to capture contributions from everyone present and to ensure the audio
-                    quality. </p>
-            
+            <p>Typically it is best to put the recording
+                device centrally in the room to capture contributions from everyone present and to ensure the audio
+                quality. </p>
+
 
             <audio controls src="sound6.Motivated.mp3"></audio>
             <p>This is a short audio.
